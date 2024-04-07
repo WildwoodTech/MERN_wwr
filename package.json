@@ -1,0 +1,41 @@
+{
+  "name": "wildwood_reservation",
+  "version": "5.0.0",
+  "description": "Wildwood Reservation Site",
+  "scripts": {
+    "start": "run-s start:*",
+    "start:build": "npm i && cd frontend && npm i && npm run build",
+    "start:app": "cross-env NODE_ENV=production ts-node --transpile-only src/main.ts",
+    "dev": "concurrently \"nodemon src/main.ts\" \"cd frontend && npm start\"",
+    "dev-api": "nodemon --ignore frontend"
+  },
+  "keywords": [],
+  "author": "Ericarthurc",
+  "license": "MIT",
+  "dependencies": {
+    "@sendgrid/mail": "7.6.0",
+    "@types/validator": "^13.7.1",
+    "chalk": "4.1.2",
+    "cookie-parser": "1.4.6",
+    "cors": "^2.8.5",
+    "cross-env": "7.0.3",
+    "dotenv": "16.0.0",
+    "express": "4.17.2",
+    "helmet": "5.0.2",
+    "mongoose": "^6.2.1",
+    "morgan": "1.10.0",
+    "socket.io": "4.4.1",
+    "ts-node": "^10.5.0",
+    "validator": "13.7.0"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.2",
+    "@types/express": "^4.17.13",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^17.0.16",
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.15",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^4.5.5"
+  }
+}

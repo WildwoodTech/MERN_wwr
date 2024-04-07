@@ -1,0 +1,77 @@
+.stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #eebcab;
+  min-height: 100vh;
+}
+
+.stats_service {
+  font-weight: bold;
+  color: black;
+}
+
+.stats_signups {
+  margin-bottom: 10px;
+}
+
+.stats_signups p {
+  color: black;
+  font-size: 16px;
+}
+
+.stats_not-logged {
+  margin-top: 15%;
+  display: grid;
+  justify-content: center;
+}
+
+.stats_input {
+  /* form input background */
+  background: #00000065;
+  /* typing text color */
+  color: #fff;
+  padding: 0.375rem 0.75rem;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  border: 1px solid #d34919;
+  justify-self: center;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.stats_input:focus {
+  outline: 0;
+}
+
+.stats_button {
+  color: #fff;
+  background-color: #d34919;
+  border: 1px solid #d34919;
+  padding: 0.375rem 0.75rem;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  justify-self: center;
+  cursor: pointer;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+
+  &:hover {
+    outline: 0;
+    background-color: #ff9100;
+    border: 1px solid #ff9100;
+  }
+
+  &:focus {
+    outline: 0;
+    background-color: #ff9100;
+    border: 1px solid #ff9100;
+  }
+}
+.stats_error-message {
+  color: red;
+  font-weight: bold;
+  padding-top: 10px;
+}
